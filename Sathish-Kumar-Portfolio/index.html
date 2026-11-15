@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sathish Kumar M — RF CMOS, Power Electronics &amp; Embedded Systems</title>
+  <meta name="description" content="Engineering portfolio of Sathish Kumar M — B.E. EEE undergraduate specializing in 90-nm RF CMOS IC design, 3-phase regenerative power electronics, and embedded systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <canvas class="circuit-canvas" id="circuitCanvas" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Instrument-panel navigation: numbered section nodes + live progress trace -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Sathish Kumar M — back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" role="img"><path d="M5 22h7l4-10 7 19 5-12 3 3h6"/><circle cx="5" cy="22" r="2"/><circle cx="37" cy="22" r="2"/></svg>
+        </span>
+        <span class="brand-stack"><strong>SATHISH KUMAR M</strong><small>EEE · ENGINEERING PORTFOLIO</small></span>
+      </a>
+      <nav id="primaryNav" class="nav-links" aria-label="Primary navigation">
+        <a href="#workbench"><span class="nav-number">01</span><span class="nav-label">LAB</span></a>
+        <a href="#experience"><span class="nav-number">02</span><span class="nav-label">EXPERIENCE</span></a>
+        <a href="#work"><span class="nav-number">03</span><span class="nav-label">PROJECTS</span></a>
+        <a href="#achievements"><span class="nav-number">04</span><span class="nav-label">RECOGNITION</span></a>
+        <a href="#toolkit"><span class="nav-number">05</span><span class="nav-label">TOOLKIT</span></a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="cmd-trigger" id="openCmdBtn" type="button" aria-label="Open quick command palette"><span>COMMAND</span><kbd>⌘ K</kbd></button>
+        <button class="btn-outline-sm" id="openResumeBtn" type="button">CV ↗</button>
+        <a class="btn-solid-sm" href="#contact">LET’S TALK <span aria-hidden="true">↗</span></a>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav-progress-track" aria-hidden="true"><span id="navProgress"></span></div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Stage: Left Architectural Typography + Right Borderless Standing Figure -->
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="hero-kicker-row">
+            <span class="kicker-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              B.E. EEE · CIT CHENNAI (2024–2028)
+            </span>
+            <span class="kicker-mono">CGPA 8.26 / 10</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Exploring <span class="accent-copper">Electronics</span>, Embracing Ideas, Connecting People, and <span class="accent-copper">Building What’s Next.</span>
+          </h1>
+
+          <p class="hero-summary">
+            I’m <strong>Sathish Kumar M</strong>—an Electrical &amp; Electronics Engineering undergraduate experienced across defense electrical testing at <strong>CVRDE (DRDO)</strong>, <strong>ISO/IEC 17025</strong> metrology, and <strong>90-nm RF CMOS</strong> circuit design.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn-solid" href="#work">Inspect Case Studies</a>
+            <a class="btn-outline" href="#workbench">Launch RF &amp; PWM Lab ↓</a>
+            <button class="btn-copy" type="button" data-copy="msk130707@gmail.com">
+              <span>msk130707@gmail.com</span>
+              <span class="copy-tag">COPY</span>
+            </button>
+          </div>
+
+          <!-- Architectural Index Strip -->
+          <div class="hero-index-grid">
+            <div class="index-cell">
+              <span class="index-label">DEFENSE INTERNSHIP</span>
+              <strong class="index-val">CVRDE, DRDO</strong>
+              <span class="index-sub">Start-Repeat Relay &amp; ECJB</span>
+            </div>
+            <div class="index-cell">
+              <span class="index-label">90-NM CMOS LNA</span>
+              <strong class="index-val">0.245 dB NF</strong>
+              <span class="index-sub">Cadence Virtuoso S-Param</span>
+            </div>
+            <div class="index-cell">
+              <span class="index-label">NATIONAL FINALS</span>
+              <strong class="index-val">IIT Madras '26</strong>
+              <span class="index-sub">Analog Circuit Design Track</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Borderless Natural Standing Portrait Column -->
+        <div class="hero-figure-col">
+          <div class="figure-stage">
+            <img
+              src="standing-portrait.png"
+              onerror="this.onerror=null;this.src='007.jpeg';"
+              alt="Sathish Kumar M standing portrait"
+              class="standing-figure"
+            >
+            <div class="figure-floor-fade" aria-hidden="true"></div>
+
+            <!-- Subtle Engineering Telemetry Callout Tag -->
+            <div class="figure-tag">
+              <span class="tag-code">LOC // CHENNAI, IN</span>
+              <span class="tag-role">RF CMOS · Power Electronics · Embedded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-nameplate" aria-label="Sathish Kumar M">
+        <span>SATHISH KUMAR M</span>
+      </div>
+    </section>
+
+    <!-- Interactive Hardware & RF Engineering Workbench -->
+    <section id="workbench" class="section section-bordered">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <span class="section-code">01 // INTERACTIVE ENGINEERING WORKBENCH</span>
+            <h2>Interactive RF &amp; power-stage concept explorer.</h2>
+          </div>
+          <div class="wb-tabs" role="tablist" aria-label="Select simulation bench">
+            <button class="wb-tab active" role="tab" aria-selected="true" data-bench="lna">
+              90-nm CMOS LNA (RF)
+            </button>
+            <button class="wb-tab" role="tab" aria-selected="false" data-bench="gim">
+              GIM-RBS (Downhill PWM)
+            </button>
+          </div>
+        </div>
+
+        <div class="workbench-shell">
+          <!-- Left Interactive Controls -->
+          <div class="wb-controls">
+            <div id="controls-lna" class="bench-control-group">
+              <p class="wb-desc">
+                Explore an illustrative frequency-response curve alongside the documented noise figure of my <strong>90-nm CMOS Low-Noise Amplifier</strong> designed in Cadence Virtuoso.
+              </p>
+
+              <label class="slider-label" for="freqSlider">
+                <span>Carrier Frequency (GHz)</span>
+                <strong id="freqVal">2.40 GHz</strong>
+              </label>
+              <input type="range" id="freqSlider" min="1.0" max="6.0" step="0.1" value="2.4">
+
+              <div class="readout-grid">
+                <div class="readout-box">
+                  <span>Noise Figure (NF)</span>
+                  <strong id="nfReadout" class="accent-copper">0.245 dB</strong>
+                </div>
+                <div class="readout-box">
+                  <span>Forward Gain (S21)</span>
+                  <strong id="s21Readout">Not reported</strong>
+                </div>
+                <div class="readout-box">
+                  <span>Input Match (S11)</span>
+                  <strong id="s11Readout">Not reported</strong>
+                </div>
+              </div>
+            </div>
+
+            <div id="controls-gim" class="bench-control-group" hidden>
+              <p class="wb-desc">
+                Explore an illustrative control response showing how the <strong>GIM-RBS</strong> concept translates <strong>MPU6050</strong> downhill road slope estimation into adaptive <strong>ESP32</strong> PWM duty cycles for the 3-phase IRFZ44N MOSFET bridge.
+              </p>
+
+              <label class="slider-label" for="slopeSlider">
+                <span>Downhill Road Gradient (Degrees)</span>
+                <strong id="slopeVal">12° Downhill</strong>
+              </label>
+              <input type="range" id="slopeSlider" min="0" max="25" step="1" value="12">
+
+              <div class="readout-grid">
+                <div class="readout-box">
+                  <span>Illustrative PWM command</span>
+                  <strong id="pwmReadout" class="accent-copper">Illustrative</strong>
+                </div>
+                <div class="readout-box">
+                  <span>Current measurement</span>
+                  <strong id="currReadout">Not reported</strong>
+                </div>
+                <div class="readout-box">
+                  <span>Gate Driver Stage</span>
+                  <strong>3× IR2104</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Live Plot Canvas -->
+          <div class="wb-viewport">
+            <div class="viewport-bar">
+              <span id="viewportTitle">CADENCE VIRTUOSO // 90-NM CMOS LNA RESPONSE</span>
+              <span class="viewport-live">INTERACTIVE ILLUSTRATION</span>
+            </div>
+            <canvas id="benchCanvas" width="640" height="220" aria-label="Illustrative interactive engineering response graph"></canvas>
+            <p class="model-note">Conceptual visualization for interaction only — not measured or validated simulation data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 / Industry & Research Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-code">02 // EXPERIENCE</span>
+          <h2>Defense R&amp;D, RF silicon, and accredited calibration.</h2>
+        </div>
+
+        <div class="exp-bento">
+          <article class="exp-card" data-skills="Cadence Virtuoso,S-Parameter,Noise Analysis">
+            <div class="card-top-row">
+              <span class="mono-pill">11/2025 – 12/2025</span>
+              <span class="tag-pill">RF IC Design</span>
+            </div>
+            <h3>Research Intern — Centre for Non-Linear Systems, CIT</h3>
+            <p class="card-org">Chennai Institute of Technology</p>
+            <ul>
+              <li>Analyzed and optimized Low-Noise Amplifier (LNA) topologies for GHz-range RF receiver applications.</li>
+              <li>Used <strong>Cadence Virtuoso</strong> for schematic design, transistor biasing, S-parameter extraction, and noise analysis.</li>
+              <li>Authored a technical manuscript detailing design methodology and iterative simulation performance.</li>
+            </ul>
+          </article>
+
+          <article class="exp-card" data-skills="ISO/IEC 17025,Calibration">
+            <div class="card-top-row">
+              <span class="mono-pill">06/2025</span>
+              <span class="tag-pill">NABL Accredited</span>
+            </div>
+            <h3>Industrial Intern — AVM Labs Pvt Ltd, Chennai</h3>
+            <p class="card-org">Calibration &amp; Metrology Laboratory</p>
+            <ul>
+              <li>Completed a 2-week internship executing dimensional and electrical calibration of precision test instruments.</li>
+              <li>Gained exposure to <strong>ISO/IEC 17025</strong> standards, calibration traceability, and quality assurance practices.</li>
+            </ul>
+          </article>
+
+          <article class="exp-card" data-skills="Relay Systems,Hardware Testing">
+            <div class="card-top-row">
+              <span class="mono-pill">05/2025 – 06/2025</span>
+              <span class="tag-pill">Defense R&amp;D</span>
+            </div>
+            <h3>Project Intern — CVRDE, DRDO</h3>
+            <p class="card-org">Electrical Division · Combat Vehicles Research &amp; Development Establishment</p>
+            <ul>
+              <li>Studied Electrical Control Junction Box (ECJB) architectures and electrical subsystems during a 4-week internship.</li>
+              <li>Designed and developed a <strong>Start-Repeat Relay System</strong> project assigned by division technicians.</li>
+              <li>Learned component testing and validation methodologies for armoured battle tanks.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / Selected Case Studies & Project Archive -->
+    <section id="work" class="section section-tinted">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <span class="section-code">03 // ENGINEERING PROJECTS</span>
+            <h2>From 90-nm CMOS schematics to 3-phase PCBs.</h2>
+          </div>
+
+          <div class="filter-tabs" role="group" aria-label="Filter projects">
+            <button class="filter-tab active" data-filter="all">All Builds (4)</button>
+            <button class="filter-tab" data-filter="power">Power &amp; Embedded</button>
+            <button class="filter-tab" data-filter="rf">RF &amp; VLSI</button>
+          </div>
+        </div>
+
+        <div class="project-bento">
+          <!-- Featured Project 1: GIM-RBS with its simulation walkthrough -->
+          <article class="proj-card proj-featured" data-cat="power" data-skills="ESP32,KiCad,C & Embedded C,MPU6050">
+            <div class="card-top-row">
+              <span class="mono-pill">SEP 2026 · REGENERATIVE BRAKING</span>
+              <span class="metric-badge">3-Phase MOSFET POWER STAGE</span>
+            </div>
+            <div class="proj-featured-content">
+              <div class="proj-featured-copy">
+                <span class="project-eyebrow"><i></i> FEATURED ENGINEERING PROJECT</span>
+                <h3>Gradient-Index Modulated Regenerative Braking System <span>(GIM-RBS)</span></h3>
+                <p>An ESP32-based regenerative braking concept that uses MPU6050 slope estimation to adapt PWM braking commands to downhill gradients. The design brings together a 3-phase IR2104/IRFZ44N power stage, ACS712 current sensing and a custom KiCad PCB.</p>
+                <div class="proj-footer">
+                  <div class="mini-tags"><span>ESP32</span><span>MPU6050</span><span>IR2104 / IRFZ44N</span><span>ACS712</span><span>KiCad</span></div>
+                  <button class="spec-btn" type="button" data-project="gim-rbs">Explore project ↗</button>
+                </div>
+              </div>
+              <aside class="gim-demo-panel" id="gim-demo" aria-label="GIM-RBS simulation video demonstration">
+                <div class="demo-panel-head"><div><span class="demo-kicker">FIELD NOTE / 001</span><strong>Simulation walkthrough</strong></div><span class="demo-duration">01:10</span></div>
+                <div class="demo-video-frame">
+                  <video class="gim-demo-video" controls preload="metadata" playsinline poster="media/gim-rbs-simulation-poster.jpg">
+                    <source src="media/gim-rbs-simulation-demo.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video. Please use a modern browser to view this demonstration.
+                  </video>
+                </div>
+                <p class="demo-caption">Slope telemetry · pitch-angle estimation · downhill braking response</p>
+              </aside>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="proj-card" data-cat="rf" data-skills="Cadence Virtuoso,90-nm CMOS">
+            <div class="card-top-row">
+              <span class="mono-pill">JAN 2026 · SIMULATION</span>
+              <span class="metric-badge">0.245 dB NF</span>
+            </div>
+            <h3>Design &amp; Development of a Low-Noise Amplifier (90-nm CMOS)</h3>
+            <p>
+              Designed and refined an RF receiver LNA schematic in Cadence Virtuoso, achieving a simulated noise figure of 0.245 dB alongside comprehensive S-parameter and noise characterization.
+            </p>
+            <div class="proj-footer">
+              <div class="mini-tags">
+                <span>Cadence Virtuoso</span>
+                <span>90-nm CMOS</span>
+                <span>S-Parameters</span>
+              </div>
+              <button class="spec-btn" type="button" data-project="lna-90nm">Spec Sheet →</button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="proj-card" data-cat="power" data-skills="ESP32,ESP-NOW,C & Embedded C,Arduino IDE">
+            <div class="card-top-row">
+              <span class="mono-pill">MAR 2026 · PROTOTYPE</span>
+              <span class="metric-badge">ESP-NOW Wireless</span>
+            </div>
+            <h3>Smart Hairpin Bend Accident Prevention System</h3>
+            <p>
+              Bidirectional hill-road safety system using ESP32, ultrasonic vehicle detection, LCD/buzzer alerts, low-latency ESP-NOW inter-unit wireless communication, and vibration-based crash emergency alerts.
+            </p>
+            <div class="proj-footer">
+              <div class="mini-tags">
+                <span>ESP32</span>
+                <span>ESP-NOW</span>
+                <span>Ultrasonic</span>
+                <span>Embedded C</span>
+              </div>
+              <button class="spec-btn" type="button" data-project="hairpin-bend">Spec Sheet →</button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="proj-card" data-cat="power" data-skills="Arduino,C & Embedded C,Arduino IDE">
+            <div class="card-top-row">
+              <span class="mono-pill">NOV 2025 · COMPLETED</span>
+              <span class="metric-badge">Debounce Logic</span>
+            </div>
+            <h3>Anti-Theft Fuel System</h3>
+            <p>
+              Arduino-based fuel-theft detection prototype combining a vibration sensor, software debounce tamper-detection logic, and a relay-controlled audible alarm with GSM notification scalability.
+            </p>
+            <div class="proj-footer">
+              <div class="mini-tags">
+                <span>Arduino</span>
+                <span>Embedded C</span>
+                <span>Relay Control</span>
+              </div>
+              <button class="spec-btn" type="button" data-project="fuel-theft">Spec Sheet →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / Competitions & Achievements -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-code">04 // COMPETITIONS &amp; CONFERENCES</span>
+          <h2>Recognized across analog design, edge AI, and FPGA verification.</h2>
+        </div>
+
+        <div class="comp-row">
+          <article class="comp-card highlight-border">
+            <div class="card-top-row">
+              <span class="mono-pill">2026 · IIT MADRAS</span>
+              <span class="badge-copper">Finals Shortlist</span>
+            </div>
+            <h3>Analog Circuit Design Challenge 2026</h3>
+            <p>Shortlisted for the national finals in the analog circuit design track organized by IIT Madras.</p>
+          </article>
+
+          <article class="comp-card">
+            <div class="card-top-row">
+              <span class="mono-pill">2026 · ARM</span>
+              <span class="tag-pill">Selected Participant</span>
+            </div>
+            <h3>ARM AI Innovation Challenge 2026</h3>
+            <p>Built real-time gesture control and edge AI inference applications on ARM hardware platforms.</p>
+          </article>
+
+          <article class="comp-card">
+            <div class="card-top-row">
+              <span class="mono-pill">2026 · DVCON INDIA</span>
+              <span class="tag-pill">Technical Report</span>
+            </div>
+            <h3>DVCon India Design Conference 2026</h3>
+            <p>Submitted a technical report on the VEGA processor / FPGA object-selection framework for the selection round.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / Interactive Skill Matrix & Academic Credentials -->
+    <section id="toolkit" class="section section-tinted">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <span class="section-code">05 // TECHNICAL TOOLKIT &amp; CREDENTIALS</span>
+            <h2>Click any tool to highlight matching experience.</h2>
+          </div>
+          <span class="match-counter" id="matchCounter">Showing all tools</span>
+        </div>
+
+        <div class="toolkit-layout">
+          <div class="tool-panel">
+            <h3>Simulation &amp; IC Design</h3>
+            <div class="skill-chips">
+              <button class="skill-btn" data-skill="Cadence Virtuoso">Cadence Virtuoso (S-Param &amp; Noise)</button>
+              <button class="skill-btn" data-skill="Synopsys PrimeWave">Synopsys PrimeWave</button>
+              <button class="skill-btn" data-skill="MATLAB">MATLAB &amp; Simulink</button>
+              <button class="skill-btn" data-skill="Verilog">Verilog</button>
+              <button class="skill-btn" data-skill="eSim">eSim</button>
+            </div>
+          </div>
+
+          <div class="tool-panel">
+            <h3>EDA &amp; PCB Layout</h3>
+            <div class="skill-chips">
+              <button class="skill-btn" data-skill="KiCad">KiCad (Schematic &amp; PCB Layout)</button>
+              <button class="skill-btn" data-skill="OrCAD X">OrCAD X Capture</button>
+              <button class="skill-btn" data-skill="EasyEDA">EasyEDA</button>
+              <button class="skill-btn" data-skill="Arduino IDE">Arduino IDE</button>
+              <button class="skill-btn" data-skill="ISO/IEC 17025">ISO/IEC 17025 Metrology</button>
+            </div>
+          </div>
+
+          <div class="tool-panel">
+            <h3>Embedded, Edge AI &amp; Programming</h3>
+            <div class="skill-chips">
+              <button class="skill-btn" data-skill="C & Embedded C">C &amp; Embedded C</button>
+              <button class="skill-btn" data-skill="Python">Python</button>
+              <button class="skill-btn" data-skill="Java">Java</button>
+              <button class="skill-btn" data-skill="ESP32">ESP32 &amp; ESP-NOW</button>
+              <button class="skill-btn" data-skill="Arduino">Arduino &amp; UART</button>
+              <button class="skill-btn" data-skill="Jetson Nano">NVIDIA Jetson Nano &amp; Linux</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Certifications Strip -->
+        <div class="edu-cert-grid">
+          <div class="edu-box">
+            <span class="section-code">EDUCATION</span>
+            <h4>B.E. Electrical and Electronics Engineering</h4>
+            <p>Chennai Institute of Technology · 2024 – 2028 · <strong>CGPA: 8.26</strong></p>
+          </div>
+          <div class="edu-box">
+            <span class="section-code">CERTIFICATIONS</span>
+            <p>Cisco Introduction to Networks · NPTEL Introduction to IoT · NPTEL Sensors &amp; Actuators · MathWorks MATLAB &amp; Simulink Onramp</p>
+          </div>
+          <div class="edu-box">
+            <span class="section-code">LANGUAGES</span>
+            <p>Tamil (Native) · English (Professional) · Hindi (Elementary)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 / Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-wrap">
+        <div>
+          <span class="section-code">06 // CONTACT</span>
+          <h2>Available for core hardware, RF, and embedded roles.</h2>
+          <p>Chennai, Tamil Nadu, India · Open to internships, R&amp;D projects, and technical collaborations.</p>
+        </div>
+
+        <div class="contact-cta-group">
+          <a class="btn-solid" href="mailto:msk130707@gmail.com">Email: msk130707@gmail.com ↗</a>
+          <button class="btn-outline-dark" type="button" data-copy="+91-9498652380">Copy Phone: +91-9498652380</button>
+          <div class="contact-links-row">
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Sathish Kumar M</span>
+      <span>B.E. EEE · Chennai Institute of Technology</span>
+    </div>
+  </footer>
+
+  <!-- Scroll-following microbot: a small engineering companion that flies across the viewport as the page is explored. -->
+  <div class="flight-bot" id="flightBot" aria-hidden="true">
+    <span class="bot-trail bot-trail-a"></span>
+    <span class="bot-trail bot-trail-b"></span>
+    <div class="bot-label" id="flightBotLabel"><i></i><span>SCOUT // ONLINE</span></div>
+    <svg class="bot-svg" viewBox="0 0 112 90" xmlns="http://www.w3.org/2000/svg" role="presentation">
+      <defs>
+        <linearGradient id="botShell" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fbff"/><stop offset=".55" stop-color="#b8c9df"/><stop offset="1" stop-color="#7189a8"/></linearGradient>
+        <linearGradient id="botGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#19375a"/><stop offset="1" stop-color="#07182d"/></linearGradient>
+      </defs>
+      <!-- antenna -->
+      <path d="M56 16V8" stroke="#6685aa" stroke-width="3" stroke-linecap="round"/><circle cx="56" cy="6" r="4" fill="#31c9d3" class="bot-antenna-light"/>
+      <!-- side rotor arms -->
+      <path d="M34 41 18 31M78 41 94 31" stroke="#5f7898" stroke-width="5" stroke-linecap="round"/>
+      <path d="M18 31 10 20M94 31 102 20" stroke="#8ea5c1" stroke-width="3" stroke-linecap="round"/>
+      <g class="bot-rotor bot-rotor-left"><ellipse cx="10" cy="18" rx="10" ry="3" fill="#2a75e7" opacity=".9"/><ellipse cx="10" cy="18" rx="3" ry="9" fill="#72dfe3" opacity=".72"/></g>
+      <g class="bot-rotor bot-rotor-right"><ellipse cx="102" cy="18" rx="10" ry="3" fill="#2a75e7" opacity=".9"/><ellipse cx="102" cy="18" rx="3" ry="9" fill="#72dfe3" opacity=".72"/></g>
+      <!-- lower stabilisers -->
+      <path d="M39 63 31 75M73 63 81 75" stroke="#8299b6" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="29" cy="77" r="5" fill="#1c3760" stroke="#5ca9e8" stroke-width="2"/><circle cx="83" cy="77" r="5" fill="#1c3760" stroke="#5ca9e8" stroke-width="2"/>
+      <!-- robot body -->
+      <rect x="30" y="24" width="52" height="45" rx="16" fill="url(#botShell)" stroke="#526e91" stroke-width="2"/>
+      <rect x="36" y="32" width="40" height="25" rx="10" fill="url(#botGlass)" stroke="#9db6d5" stroke-width="1.5"/>
+      <ellipse cx="47" cy="44" rx="3.7" ry="4.2" fill="#5ce7f0" class="bot-eye"/><ellipse cx="65" cy="44" rx="3.7" ry="4.2" fill="#5ce7f0" class="bot-eye"/>
+      <path d="M49 51Q56 55 63 51" stroke="#80d9e5" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M42 61h28" stroke="#6f87a5" stroke-width="2" stroke-linecap="round"/><circle cx="56" cy="62" r="2" fill="#2d7ce9"/>
+    </svg>
+    <span class="bot-shadow"></span>
+  </div>
+
+  <!-- Project Spec Sheet Modal -->
+  <div class="modal-overlay" id="specModal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="specTitle">
+      <div class="modal-top">
+        <span class="section-code" id="specTag">SPECIFICATION</span>
+        <button class="close-x" id="closeSpecBtn" aria-label="Close">✕</button>
+      </div>
+      <h3 id="specTitle">Project Title</h3>
+      <p class="spec-sub" id="specMeta"></p>
+      <div class="spec-content" id="specBody"></div>
+    </div>
+  </div>
+
+  <!-- Printable One-Page Resume Modal -->
+  <div class="modal-overlay" id="resumeModal" hidden>
+    <div class="modal-box modal-lg" role="dialog" aria-modal="true" aria-labelledby="resTitle">
+      <div class="modal-top">
+        <span class="section-code">CURRICULUM VITAE // SATHISH KUMAR M</span>
+        <div style="display:flex;gap:8px;">
+          <button class="btn-solid-sm" type="button" onclick="window.print()">Print / Save PDF</button>
+          <button class="close-x" id="closeResumeBtn" aria-label="Close">✕</button>
+        </div>
+      </div>
+      <h3 id="resTitle">Sathish Kumar M</h3>
+      <p class="spec-sub">B.E. Electrical &amp; Electronics Engineering (2024–2028) · CGPA 8.26 · Chennai, India · msk130707@gmail.com · +91-9498652380</p>
+      <div class="resume-cols">
+        <div>
+          <h4>Internships</h4>
+          <ul>
+            <li><strong>CVRDE, DRDO (05/2025–06/2025):</strong> Electrical Division intern; studied ECJB systems, developed a Start-Repeat Relay System, and learned battle tank component testing.</li>
+            <li><strong>AVM Labs Pvt Ltd (06/2025):</strong> Dimensional &amp; electrical calibration under ISO/IEC 17025 in an NABL-accredited facility.</li>
+            <li><strong>Centre for Non-Linear Systems, CIT (11/2025–12/2025):</strong> GHz RF CMOS LNA design &amp; noise analysis in Cadence Virtuoso; authored technical manuscript.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Projects &amp; Honors</h4>
+          <ul>
+            <li><strong>GIM-RBS (Sep 2026):</strong> ESP32 + MPU6050 3-phase IR2104/IRFZ44N regenerative braking with ACS712 current feedback &amp; KiCad PCB.</li>
+            <li><strong>90-nm CMOS LNA (Jan 2026):</strong> Simulated 0.245 dB noise figure and S-parameter analysis in Cadence Virtuoso.</li>
+            <li><strong>Smart Hairpin Bend System (Mar 2026):</strong> ESP32 + ultrasonic + ESP-NOW wireless safety warning &amp; crash alert.</li>
+            <li><strong>Achievements:</strong> IIT Madras Analog Circuit Design Finalist 2026, ARM AI Challenge 2026, DVCon India 2026.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ctrl+K Command Palette Modal -->
+  <div class="modal-overlay" id="cmdModal" hidden>
+    <div class="modal-box cmd-box" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <div class="cmd-search-row">
+        <input type="text" id="cmdInput" placeholder="Type a command (e.g., DRDO, LNA, KiCad, Email, Resume)..." autocomplete="off">
+        <button class="close-x" id="closeCmdBtn" aria-label="Close">ESC</button>
+      </div>
+      <ul class="cmd-list" id="cmdList">
+        <li><button type="button" data-action="goto:#workbench">Launch Interactive RF &amp; PWM Workbench</button></li>
+        <li><button type="button" data-action="goto:#experience">Jump to DRDO, AVM Labs &amp; CIT Internships</button></li>
+        <li><button type="button" data-action="spec:gim-rbs">Inspect GIM-RBS Regenerative Braking Spec Sheet</button></li>
+        <li><button type="button" data-action="spec:lna-90nm">Inspect 90-nm CMOS LNA (0.245 dB NF) Spec Sheet</button></li>
+        <li><button type="button" data-action="spec:hairpin-bend">Inspect Smart Hairpin Bend ESP-NOW Spec Sheet</button></li>
+        <li><button type="button" data-action="copy:msk130707@gmail.com">Copy Email Address (msk130707@gmail.com)</button></li>
+        <li><button type="button" data-action="resume">Open Printable Resume / PDF View</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
